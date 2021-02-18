@@ -2,33 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>KomikKu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img id="logo" src="assets/img/sanmovgem.png" alt="logo">
+            <!-- <img id="logo" src="assets/img/sanmovgem.png" alt="logo"> -->
+            <p id="logo">PORTFOLIO</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#comingsoon">CoomingSoon</a></li>
-                <li><a href="#popular">Popular</a></li>
+                <li><a href="#carousel">Home</a></li>
+                <li><a href="#introduce">Introduce</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
             </ul>
         </nav>
         <div class="carousel" id="carousel">
-            <h1>KomikKu</h1>
-            <p>You Can Read Komik in Here!</p>
-            <button class="button_next">&#10094;</button>
-            <button class="button_prev">&#10095;</button>
+            <h1>Hello!, <br />I'm Muhammad Haidar Fahmi</h1>
+            <a href="#introduce">View More</a>
         </div>
     </header>
     <main>
+        <div id="content">
+            <article id="introduce" class="card">
+                <h2>Introduce</h2>
+                <div id="articel_1">
+                    <img src="assets/img/fahmi1.png" class="featured-image" alt="sejarah" />
+                    <p>
+                        Hello, <span>I'm Muhammad Haidar Fahmi</span>. I was studiying at UIN Syarif Hidayatullah
+                        Jakarta. I interested in Programming since I
+                        was in Senior High School, I think the Programming is cool. Currently i Focused to learn more
+                        about Frontend Development using ReactJS.
+                    </p>
+                </div>
+            </article>
+
+            <article id="skills" class="card">
+                <h2>Skills</h2>
+                <div class="container">
+                    <div class="column">
+                        <div class="card">
+                            <img id="iconBasic" class="icon-image" src="assets/img/react.png" alt="icon">
+                            <button class="button_next" onclick="changeBasic2()">&#10094;</button>
+                            <button class="button_prev" onclick="changeBasic1()">&#10095;</button>
+                            <h2>BASIC</h2>
+                            <ul>
+                                <li>ReactJS</li>
+                                <li>NodeJS</li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img id="iconIntermediate" class="icon-image" src="assets/img/html.png" alt="icon"><br />
+                            <button class="button_next" onclick="changeIntermediate2()">&#10094;</button>
+                            <button class="button_prev" onclick="changeIntermediate1()">&#10095;</button>
+                            <h2>INTERMEDIATE</h2>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img id="iconAdvance" class="icon-image" src="assets/img/none.png" alt="icon">
+                            <button class="button_next" onclick="changeAdvance2()">&#10094;</button>
+                            <button class="button_prev" onclick="changeAdvance1()">&#10095;</button>
+                            <h2>ADVANCE</h2>
+                            <ul>
+                                <li>None</li>
+                                <li>None</li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="project" class="card">
+                <h2>Project</h2>
+                <h3>1. SANMOVGEM</h3>
+                <img src="assets/img/project.jpg" class="project-image" alt="project">
+                <P>Link Project : <a target="_blanck" href="https://sanmovgem.netlify.app/">https://sanmovgem.netlify.app/</a></P>
+                <p>
+                    Creating a front-end website regarding lists of movies and games using ReactJS to fulfill the final
+                    project assignments in the SanberCode program, but this website is still not responsive. So it can
+                    only be opened on a laptop or PC, it is not recommended to open it via mobile.
+                </p>
+                </section>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>PROFILE ME</h2>
+                    <figure>
+                        <img src="assets/img/profile.png" />
+                    </figure>
+                </header>
+                <section>
+                    <h3>Biodata</h3>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>M. Haidar Fahmi</td>
+                        </tr>
+                        <tr>
+                            <th>Date of Birth</th>
+                            <td>Jakrta, 18 September 2000</td>
+                        </tr>
+                        <tr>
+                            <th>Job</th>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <th>University</th>
+                            <td>UIN Jakarta</td>
+                        </tr>
+                        <tr>
+                            <th>Major</th>
+                            <td>Informatics Engineering</td>
+                        </tr>
+                    </table>
+                    <h3>Social Media</h3>
+                    <div class="social">
+                        <ul>
+                            <li><a target="_blanck" href="https://www.instagram.com/haidarfahmii"><i
+                                        class="fab fa-instagram "></i></a></li>
+                            <li><a target="_blanck" href="https://www.linkedin.com/in/haidarfahmi"><i
+                                        class="fab fa-linkedin "></i></a></li>
+                            <li><a target="_blanck" href="https://github.com/haidarfahmii"><i
+                                        class="fab fa-github "></i></a></li>
+                            <li><a target="_blanck" href="https://gitlab.com/haidarfahmi"><i
+                                        class="fab fa-gitlab"></i></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </aside>
     </main>
-    <footer></footer>
-    <script src="assets/js/change.js"></script>
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
